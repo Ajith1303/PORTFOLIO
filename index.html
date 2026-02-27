@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajith - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="icon" type="image/x-icon" href="pic2.ico">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('show')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="mobile-menu nav-links" style="display:none;flex-direction:column;padding:0 24px 16px;gap:12px;">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="label">Hello, I'm</p>
+        <h1>Ajith</h1>
+        <p class="title">Full Stack Developer</p>
+        <p class="tagline">Building modern, scalable web experiences with passion and precision.</p>
+        <div class="hero-buttons">
+          <a href="mailto:arunajith4544@gmail.com" class="btn-primary">Hire Me</a>
+          <a href="#about" class="btn-secondary">About Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <!-- REPLACE with your image path -->
+          <img src="ajith.jpg" alt="Ajith" class="profile-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section alt" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="underline"></div>
+      <p class="about-text">I'm a passionate developer with 2+ years of experience building web applications. I love creating clean, efficient, and user-friendly solutions. I specialize in Html, Css, React, Node.js, Python, and SQL delivering end-to-end products that make a real impact.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="underline"></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section alt" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="underline"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Get in <span>Touch</span></h2>
+      <div class="underline"></div>
+      <p class="contact-text">Feel free to reach out for collaborations, freelance work, or just a friendly hello!</p>
+      <div class="contact-links">
+        <a href="mailto:arunajith4544@gmail.com" class="btn-primary">✉️ arunajith4544@gmail.com</a>
+        <a href="https://github.com/Ajith1303" target="_blank" class="btn-secondary">GitHub</a>
+        <a href="https://www.linkedin.com/in/ajith-m-914885355/" target="_blank" class="btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer><p>© 2026 Ajith. All rights reserved.</p></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
