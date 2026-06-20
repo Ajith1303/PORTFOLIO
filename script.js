@@ -2,11 +2,11 @@
     // ===== EDIT YOUR DATA HERE =====
     const skills = [
       { name: "HTML", level: 90 },
-      { name: "react", level: 85 },
+      { name: "React", level: 85 },
       { name: "Node.js", level: 80 },
       { name: "Python", level: 75 },
       { name: "CSS", level: 90 },
-      { name: "PostgreSQL", level: 70 },
+      { name: "SQL", level: 70 },
     ];
 
     const projects = [
