@@ -1,5 +1,5 @@
 
-    // ===== EDIT YOUR DATA HERE =====
+    
     const skills = [
       { name: "HTML", level: 90 },
       { name: "React", level: 85 },
@@ -15,9 +15,9 @@
       { title: "Task Manager", description: "A productivity tool with drag-and-drop tasks and team collaboration.", tech: ["Node.js", "MongoDB", "React"], link: "https://github.com/johndoe/task-manager" },
       { title: "Portfolio Website", description: "This portfolio — a responsive, dark-themed personal site.", tech: ["HTML", "CSS", "JS"], link: "https://github.com/johndoe/portfolio" },
     ];
-    // ================================
+  
 
-    // Render skills
+    
     const skillsHTML = skills.map(s => `
       <div class="skill-item">
         <label><span>${s.name}</span><span>${s.level}%</span></label>
@@ -26,7 +26,7 @@
     `).join('');
     document.getElementById('skillsGrid').innerHTML = skillsHTML;
 
-    // Render projects
+  
     const projectsHTML = projects.map(p => `
       <a href="${p.link}" target="_blank" class="project-card">
         <h3>${p.title}</h3>
@@ -36,7 +36,7 @@
     `).join('');
     document.getElementById('projectsGrid').innerHTML = projectsHTML;
 
-    // Mobile menu
+    
     document.querySelector('.hamburger').addEventListener('click', function() {
       const menu = document.querySelector('.mobile-menu');
       menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
